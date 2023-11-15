@@ -22,7 +22,8 @@ function LocationForm({ submitHandler }) {
         initialValues={initialValues}
         validationSchema={schema}
         onSubmit={(values) => submitHandler({
-          country: JSON.parse(values.country), state: JSON.parse(values.state) })}>
+          country: JSON.parse(values.country),
+          state: JSON.parse(values.state) })}>
         {(formik) => {
           const { errors, touched, isValid, dirty, values } = formik;
           return (

@@ -32,7 +32,7 @@ function Home() {
     <div>
       <LocationForm submitHandler={submitHandler}/>
       {country && state && <h2>Weather forecast for {country.name}, {state.name}, {currDate.toDateString()}</h2>}
-      <div>{weatherData?.days[0]?.description}</div>
+      <h4>{weatherData?.days[0]?.description}</h4>
       <div>
         {weatherData?.days[0]?.hours?.map((hour) => (
           <div>
